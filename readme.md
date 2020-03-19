@@ -56,7 +56,7 @@ The connection to Intels DE0-Nano-SoC is made through the pmod2nano adapter.
 9    |  G     |  LED Segment G | PIN_Y4 |PIN_AE22
 10   |  *     |  LED Segment DP| PIN_U11|PIN_AG20
 
- J2# |  Label | Description      | GPIO0A | GPIO1A
+ J2# |  Label | Description      | GPIO0B | GPIO1B
 -----|--------|------------------|--------|--------
 1    |  CA1   | Common AN Digit1 | PIN_AF4| PIN_AH23
 2    |  CA2   | Common AN Digit2 | PIN_AF5| PIN_AE19
