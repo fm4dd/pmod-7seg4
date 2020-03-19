@@ -10,7 +10,7 @@ The 7-segment display type “common anode” requires to use inverse logic. With in
 [![7SEG4 PMOD Schematics](images/7seg4-schema.png)](images/7seg4-schema.png)
 
 ### PCB Gerber
-[7SEG4 PMOD Gerber V1.1](./20200130 7seg4 gerber v11.zip)
+[7SEG4 PMOD Gerber V1.1](20200130-7seg4-gerber-v11.zip)
 
 ### Pin Assignments
 
