@@ -194,7 +194,7 @@ endmodule
   
   
 // -------------------------------------------------------
-// module decode_7seg encode a bin number as a 7seg digit
+// module encode_7seg encodes a bin number as a 7seg digit
 // -------------------------------------------------------
 module encode_7seg(
   input CLK,
