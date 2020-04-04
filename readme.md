@@ -415,3 +415,7 @@ begin
            "11111111" WHEN OTHERS;    --default blank
 end arch;
 ```
+
+<img src="images/de0nano-soc-7seg4.jpg" width="480px">
+
+7SEG4 PMOD, connected to a DE0-Nano-SoC board
