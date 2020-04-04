@@ -364,23 +364,23 @@ begin
     prescaler := prescaler + 1;
     if( prescaler = 50000 ) then -- 1ms refresh
       prescaler := 0;
-                if (digit_posn = 0) then
+      if (digit_posn = 0) then
         digit_data <= unit;      -- assign digit_data
         DIGIT <= "1110";         -- set the 1 digit pin low (enable)
       end if;
-                if (digit_posn = 1) then
+      if (digit_posn = 1) then
         digit_data <= tens;      -- assign digit_data to show tens
         DIGIT <= "1101";         -- set the 2 digit pin low (enable)
-                end if;
+      end if;
       if (digit_posn = 2) then
         digit_data <= hundreds;  -- assign digit_data to show hundreds
         DIGIT <= "1011";         -- set the 3 digit pin low (enable)
-                end if;
+      end if;
       if (digit_posn = 3) then
         digit_data <= thousands; -- assign digit_data to show thousands
         DIGIT <= "0111";         -- set the 4 digit pin low (enable)
-                end if;
-                digit_posn := digit_posn + 1;
+      end if;
+      digit_posn := digit_posn + 1;
     end if;
   end if;
   end process display;
