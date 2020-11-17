@@ -5,7 +5,7 @@
 <img src="images/7seg4-top.jpg" width="240px">
 
 This PMOD provides a multiplexed four-digit 7-segment LED display output to FPGA designs via two double-row PMOD ports (quad-row).
-The 7-segment display type “common anode” requires to use inverse logic. With inverse logic, setting the output “LOW” lights up the LED segment. Each digit has its own common anode, but the seven LED segments are shared. To display separate numbers on each digit, the program cycles through each anode with the apropriate segments enabled for this digit.
+The 7-segment display type "common anode" requires to use inverse logic. With inverse logic, setting the output "LOW" lights up the LED segment. Each digit has its own common anode, but the seven LED segments are shared. To display separate numbers on each digit, the program cycles through each anode with the apropriate segments enabled for this digit.
 
 http://fpga.fm4dd.com/
 
@@ -419,3 +419,7 @@ end arch;
 <img src="images/de0nano-soc-7seg4.jpg" width="480px">
 
 7SEG4 PMOD, connected to a DE0-Nano-SoC board
+
+<img src="images/ulx3s-7seg4.jpg" width="480px">
+
+7SEG4 PMOD, connected to a 85K ULX3S board
