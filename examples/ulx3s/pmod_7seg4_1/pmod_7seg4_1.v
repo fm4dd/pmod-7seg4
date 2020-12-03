@@ -1,8 +1,9 @@
 // -------------------------------------------------------
 // This program is a decimal counter 0..9999, displayed on
 // the 4-digit 7-segment display. Counts in 1Hz intervals.
-// 12MHz clock: set breakpoint at 23'd5999999
-// 50MHz clock: set breakpoint at 25'd24999999
+// 12MHz clock: set breakpoint at 23'd5999999 (icebreaker)
+// 50MHz clock: set breakpoint at 25'd24999999 (de0-nano)
+// 25MHz clock: set breakpoint at 24'd12499999 (ulx3s)
 // -------------------------------------------------------
 module pmod_7seg4_1 (
   input clk,
@@ -22,7 +23,7 @@ module pmod_7seg4_1 (
 );
 
   reg clk_1hz = 1'b0;
-  reg [22:0] clk_count = 23'd0;
+  reg [23:0] clk_count = 24'd0;
   reg [3:0] DIGIT;
   reg [7:0] SEG;
   assign {seg_dp, seg_g, seg_f, seg_e, seg_d, seg_c, seg_b, seg_a} = SEG;
@@ -34,7 +35,7 @@ module pmod_7seg4_1 (
   always @(posedge clk)
   begin
     clk_count   <= clk_count + 1;
-    if(clk_count == 23'd5999999)
+    if(clk_count == 24'd12499999)
     begin
       clk_count   <= 0;
       clk_1hz <= ~clk_1hz;
